@@ -1,0 +1,54 @@
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin narrow-desktop {
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin wide-desktop {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+        @content;
+    }
+}
+
+@mixin tablet-portrait {
+    @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin tablet-landscape {
+    @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin standalone {
+    /* stylelint-disable-next-line media-feature-name-no-unknown */
+    @media all and (display-mode: standalone) {
+        @content;
+    }
+}
+
+@mixin hoverable {
+    @media (hover: hover) and (pointer: fine) {
+        @content;
+    }
+}
