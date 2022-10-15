@@ -1,0 +1,12 @@
+.main {
+    margin-inline: 16px;
+    font-family: $font-main;
+
+    @include tablet {
+        margin-inline: 32px;
+    }
+
+    @include desktop {
+        margin-inline: 64px;
+    }
+}
