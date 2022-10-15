@@ -1,11 +1,15 @@
 import React from "react";
 import "./Input.scss";
 
-export const Input = () => {
+export const Input = ({ label, isRequired }) => {
     return (
-        <label>
-            Write:
-            <input className="input" name="" />
+        <label htmlFor={label}>
+            {label}
+            <input
+                className="input"
+                id={label}
+                required={isRequired ? true : false}
+            />
         </label>
     );
 };
