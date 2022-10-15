@@ -9,7 +9,7 @@ module.exports = {
         {
             plugin: sassResourcesLoader,
             options: {
-                resources: "./src/main.scss",
+                resources: "./src/style/main.scss",
             },
         },
     ],

@@ -1,3 +1,5 @@
+import "./Content.scss";
+
 export const Content = () => {
-    return <div>Content</div>;
+    return <div className="main">Content</div>;
 };
