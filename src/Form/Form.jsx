@@ -60,10 +60,8 @@ export const Form = () => {
                 controlledValue={description}
             />
             <button type="submit" onClick={handleClick}>
-                Add Todo &nbsp;
+                Add Todo
             </button>
-            <br />
-            {description}
         </form>
     );
 };
