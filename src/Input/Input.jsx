@@ -2,7 +2,6 @@ import React from "react";
 import "./Input.scss";
 
 export const Input = ({ label, isRequired, handleChange, controlledValue }) => {
-    console.log(controlledValue);
     return (
         <label htmlFor={label}>
             {label}

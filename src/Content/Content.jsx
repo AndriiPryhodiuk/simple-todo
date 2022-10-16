@@ -1,8 +1,10 @@
-import { Form } from "../Form/Form";
+import { Todos } from "../Todos/Todos";
 import "./Content.scss";
 
 export const Content = () => {
-    return <div className="main">
-        <Form />
-    </div>;
+    return (
+        <div className="main">
+            <Todos />
+        </div>
+    );
 };
