@@ -1,7 +1,8 @@
 import React from "react";
 import "./Input.scss";
 
-export const Input = ({ label, isRequired }) => {
+export const Input = ({ label, isRequired, handleChange, controlledValue }) => {
+    console.log(controlledValue);
     return (
         <label htmlFor={label}>
             {label}
@@ -9,6 +10,8 @@ export const Input = ({ label, isRequired }) => {
                 className="input"
                 id={label}
                 required={isRequired ? true : false}
+                onChange={handleChange}
+                value={controlledValue}
             />
         </label>
     );
